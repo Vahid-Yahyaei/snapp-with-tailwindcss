@@ -10,6 +10,7 @@
     --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-400: oklch(70.7% 0.165 254.624);
@@ -194,6 +195,24 @@
   .z-10 {
     z-index: 10;
   }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .m-auto {
     margin: auto;
   }
@@ -203,11 +222,17 @@
   .mt-\[2rem\] {
     margin-top: 2rem;
   }
+  .mr-\[2rem\] {
+    margin-right: 2rem;
+  }
   .mr-\[8rem\] {
     margin-right: 8rem;
   }
   .flex {
     display: flex;
+  }
+  .grid {
+    display: grid;
   }
   .hidden {
     display: none;
@@ -218,14 +243,86 @@
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-3\/10 {
+    height: calc(3/10 * 100%);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-4\/10 {
+    height: calc(4/10 * 100%);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-5\/10 {
+    height: calc(5/10 * 100%);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-8\/10 {
+    height: calc(8/10 * 100%);
+  }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
+  .h-40\/100 {
+    height: calc(40/100 * 100%);
+  }
+  .h-45 {
+    height: calc(var(--spacing) * 45);
+  }
+  .h-45\/100 {
+    height: calc(45/100 * 100%);
+  }
+  .h-50 {
+    height: calc(var(--spacing) * 50);
+  }
+  .h-50\/100 {
+    height: calc(50/100 * 100%);
+  }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
+  }
+  .h-60\/100 {
+    height: calc(60/100 * 100%);
+  }
+  .h-70 {
+    height: calc(var(--spacing) * 70);
+  }
+  .h-70\/100 {
+    height: calc(70/100 * 100%);
+  }
   .h-\[3rem\] {
     height: 3rem;
+  }
+  .h-\[5rem\] {
+    height: 5rem;
+  }
+  .h-\[6rem\] {
+    height: 6rem;
+  }
+  .h-\[7rem\] {
+    height: 7rem;
+  }
+  .h-\[8rem\] {
+    height: 8rem;
   }
   .h-\[10rem\] {
     height: 10rem;
   }
   .h-\[30rem\] {
     height: 30rem;
+  }
+  .h-\[40rem\] {
+    height: 40rem;
+  }
+  .h-full {
+    height: 100%;
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -236,17 +333,89 @@
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
+  .w-2\/10 {
+    width: calc(2/10 * 100%);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\/10 {
+    width: calc(3/10 * 100%);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-8\/1 {
+    width: calc(8/1 * 100%);
+  }
+  .w-8\/10 {
+    width: calc(8/10 * 100%);
+  }
+  .w-15 {
+    width: calc(var(--spacing) * 15);
+  }
+  .w-15\/100 {
+    width: calc(15/100 * 100%);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-20\/100 {
+    width: calc(20/100 * 100%);
+  }
+  .w-25 {
+    width: calc(var(--spacing) * 25);
+  }
+  .w-25\/100 {
+    width: calc(25/100 * 100%);
+  }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
+  }
+  .w-30\/10 {
+    width: calc(30/10 * 100%);
+  }
+  .w-30\/100 {
+    width: calc(30/100 * 100%);
+  }
   .w-\[5rem\] {
     width: 5rem;
   }
   .w-\[10rem\] {
     width: 10rem;
   }
+  .w-\[13\.8rem\] {
+    width: 13.8rem;
+  }
+  .w-\[15rem\] {
+    width: 15rem;
+  }
   .w-\[20rem\] {
     width: 20rem;
   }
+  .w-\[22rem\] {
+    width: 22rem;
+  }
+  .w-\[23rem\] {
+    width: 23rem;
+  }
+  .w-\[24\] {
+    width: 24;
+  }
+  .w-\[24re\] {
+    width: 24re;
+  }
+  .w-\[24rem\] {
+    width: 24rem;
+  }
+  .w-\[24ren\] {
+    width: 24ren;
+  }
   .w-\[70\%\] {
     width: 70%;
+  }
+  .w-auto {
+    width: auto;
   }
   .w-full {
     width: 100%;
@@ -281,6 +450,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -302,11 +474,29 @@
   .gap-\[2rem\] {
     gap: 2rem;
   }
+  .gap-\[3rem\] {
+    gap: 3rem;
+  }
   .gap-\[4rem\] {
     gap: 4rem;
   }
+  .gap-\[5rem\] {
+    gap: 5rem;
+  }
+  .gap-\[7rem\] {
+    gap: 7rem;
+  }
+  .gap-\[10rem\] {
+    gap: 10rem;
+  }
   .gap-\[wrem\] {
     gap: wrem;
+  }
+  .self-center {
+    align-self: center;
+  }
+  .justify-self-center {
+    justify-self: center;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -323,6 +513,10 @@
     border-right-style: var(--tw-border-style);
     border-right-width: 2px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
@@ -336,6 +530,24 @@
   .bg-\[\#21AA58\] {
     background-color: #21AA58;
   }
+  .bg-\[\#DADADA\] {
+    background-color: #DADADA;
+  }
+  .bg-\[\#e4dfdf\] {
+    background-color: #e4dfdf;
+  }
+  .bg-\[\#f5f2f2\] {
+    background-color: #f5f2f2;
+  }
+  .bg-\[DADADA\] {
+    background-color: DADADA;
+  }
+  .bg-\[url\] {
+    background-color: url;
+  }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
+  }
   .bg-amber-500 {
     background-color: var(--color-amber-500);
   }
@@ -345,8 +557,77 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\)\] {
+    background-image: url();
+  }
+  .bg-\[url\(https\:\/\/jek\.snapp\.ir\/Redesign-Icons\/Insurance\.png\)\] {
+    background-image: url(https://jek.snapp.ir/Redesign-Icons/Insurance.png);
+  }
+  .bg-\[url\(https\:\/\/jek\.snapp\.ir\/icons\/market\/Market-Orange-Final\.png\)\] {
+    background-image: url(https://jek.snapp.ir/icons/market/Market-Orange-Final.png);
+  }
   .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snapp-website\/images\/homepage\/intro_desktop\.jpg\)\] {
     background-image: url(https://web-cdn.snapp.ir/snapp-website/images/homepage/intro_desktop.jpg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/app\/fdom-t\.png\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/app/fdom-t.png);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/food\/foodroicon\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/food/foodroicon.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/homepage\/Pro\.png\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/homepage/Pro.png);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/homepage\/wallet\.png\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/homepage/wallet.png);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/pay\/Intro-news\/Investemnt-New\%20Color\.png\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/pay/Intro-news/Investemnt-New%20Color.png);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/Credit\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/Credit.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/bike\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/bike.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/bus\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/bus.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/club\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/club.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/doctor\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/doctor.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/driver\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/driver.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/food\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/food.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/hotel\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/hotel.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/intflight\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/intflight.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/moving\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/moving.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/pharmacy\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/pharmacy.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/pickup\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/pickup.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/shop\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/shop.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/taxi\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/taxi.svg);
+  }
+  .bg-\[url\(https\:\/\/web-cdn\.snapp\.ir\/snappir-marketing\/images\/ventures\/train\.svg\)\] {
+    background-image: url(https://web-cdn.snapp.ir/snappir-marketing/images/ventures/train.svg);
   }
   .bg-cover {
     background-size: cover;
@@ -369,11 +650,20 @@
   .py-\[2rem\] {
     padding-block: 2rem;
   }
+  .py-\[3rem\] {
+    padding-block: 3rem;
+  }
+  .py-\[4rem\] {
+    padding-block: 4rem;
+  }
   .py-\[5rem\] {
     padding-block: 5rem;
   }
   .py-\[10rem\] {
     padding-block: 10rem;
+  }
+  .pt-\[1rem\] {
+    padding-top: 1rem;
   }
   .pt-\[2rem\] {
     padding-top: 2rem;
@@ -393,22 +683,48 @@
   .font-\[vazir-light\] {
     font-family: vazir-light;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
+  .text-\[\.8rem\] {
+    font-size: .8rem;
+  }
+  .text-\[\.9rem\] {
+    font-size: .9rem;
+  }
   .text-\[1\.4rem\] {
     font-size: 1.4rem;
+  }
+  .text-\[1rem\] {
+    font-size: 1rem;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-nowrap {
+    text-wrap: nowrap;
+  }
+  .text-wrap {
+    text-wrap: wrap;
   }
   .whitespace-nowrap {
     white-space: nowrap;
   }
   .text-\[\#21AA58\] {
     color: #21AA58;
+  }
+  .text-\[1\] {
+    color: 1;
   }
   .text-white {
     color: var(--color-white);
@@ -447,6 +763,14 @@
       }
     }
   }
+  .hover\:border-2 {
+    &:hover {
+      @media (hover: hover) {
+        border-style: var(--tw-border-style);
+        border-width: 2px;
+      }
+    }
+  }
   .hover\:bg-\[\#40c675\] {
     &:hover {
       @media (hover: hover) {
@@ -459,6 +783,12 @@
       @media (hover: hover) {
         background-color: #CBCBCB;
       }
+    }
+  }
+  .focus\:border-2 {
+    &:focus {
+      border-style: var(--tw-border-style);
+      border-width: 2px;
     }
   }
 }
